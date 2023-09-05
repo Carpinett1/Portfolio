@@ -1,0 +1,156 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 15rem;
+}
+
+.title h1 {
+  color: #1B1B1E;
+  font-family: 'Inter', 'sans-serif';
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+.styledText {
+  color: #738290;
+  font-weight: bold;
+}
+
+.styledTyping {
+  animation: typing .4s step-end infinite alternate
+}
+
+@keyframes typing {
+  50% { opacity: 0; }
+}
+
+.profile {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  transform: translateY(-100px);
+}
+
+.paragraphContainer {
+  background: url('/src/assets/background.svg');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15rem;
+  margin-top: 14rem;
+}
+
+.codesvg {
+  color: #A1B5D8;
+  width: 18rem;
+  height: 18rem;
+}
+
+.paragraph {
+  color: #1B1B1E;
+  font-family: 'Inter', 'sans-serif';
+  font-weight: 300;
+  font-size: 1.6rem;
+  text-align: justify;
+  width: 40rem;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    flex-direction: column-reverse;
+    gap: 1rem;
+    margin-top: 5rem;
+  }
+  .profile {
+    width: 9rem;
+    height: 9rem;
+    transform: none;
+  }
+
+  .title h1 {
+    font-size: 1.6rem;
+  }
+
+  .paragraphContainer {
+    flex-direction: column;
+    margin-top: 3rem;
+    gap: 3rem;
+  }
+
+  .codesvg {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+    width: 20rem;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .container {
+    flex-direction: column-reverse;
+    gap: 1rem;
+    margin-top: 5rem;
+  }
+  .profile {
+    width: 14rem;
+    height: 14rem;
+    transform: none;
+  }
+
+  .title h1 {
+    font-size: 2.2rem;
+  }
+
+  .paragraphContainer {
+    flex-direction: column;
+    margin-top: 5rem;
+    gap: 3rem;
+  }
+
+  .codesvg {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  .paragraph {
+    font-size: 1.2rem;
+    width: 30rem;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1280px) {
+  .container {
+    gap: 3rem;
+    margin-top: 10rem;
+  }
+  .profile {
+    width: 14rem;
+    height: 14rem;
+    transform: translateY(-80px);
+  }
+
+  .title h1 {
+    font-size: 2.4rem;
+  }
+
+  .paragraphContainer {
+    margin-top: 5rem;
+    gap: 3rem;
+  }
+
+  .codesvg {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  .paragraph {
+    font-size: 1.2rem;
+    width: 30rem;
+  }
+}
