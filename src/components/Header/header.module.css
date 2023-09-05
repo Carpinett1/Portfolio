@@ -1,15 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&display=swap');
+
 .Header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 100vw;
+  width: 100%;
   height: 4rem;
   background-color: #1B1B1E ;
+  box-shadow: 0px 5px 15px -3px rgba(27,27,30,0.75);
 }
 
 .Header nav {
   display: flex;
-  gap: 1.6rem;
+  gap: 2rem;
 }
 
 .Header h1 {
@@ -18,9 +21,52 @@
   letter-spacing: .4rem;
 }
 
-@media screen and (max-width: 400px ) {
+.img {
+  color: #FFFCF7;
+  width: 2rem;
+  height: 2rem;
+}
+
+.img:hover {
+  color: #A1B5D8;
+  transform: scale(1.5);
+  transition: 100ms ease-in-out;
+}
+
+.pageNavigation {
+  display: flex;
+  height: 4rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.pageNavigation a {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  color: #040404;
+}
+
+.pageNavigation a:hover {
+  color: #A1B5D8;
+  transform: scale(1.5);
+  font-weight: 600;
+  transition: 100ms ease-in-out;
+}
+
+@media screen and (max-width: 480px ) {
   .Header h1 {
     font-size: 1.3rem;
     letter-spacing: .4rem;
+  }
+
+  .pageNavigation {
+    gap: 3.5rem;
+  }
+
+  .pageNavigation a {
+    font-size: 1rem;
   }
 }
