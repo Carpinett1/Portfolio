@@ -1,0 +1,26 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 4rem;
+  background-color: #1B1B1E ;
+}
+
+.Header nav {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.Header h1 {
+  color: #FFFCF7;
+  font-family: monospace;
+  letter-spacing: .4rem;
+}
+
+@media screen and (max-width: 400px ) {
+  .Header h1 {
+    font-size: 1.3rem;
+    letter-spacing: .4rem;
+  }
+}

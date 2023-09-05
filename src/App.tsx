@@ -1,8 +1,13 @@
 import './App.css';
+import Footer from './components/Footer/footer';
+import Header from './components/Header/header';
 
 function App() {
   return (
-    <h1>Heloo World</h1>
+    <>
+      <Header />
+      <Footer />
+    </>
   );
 }
 
