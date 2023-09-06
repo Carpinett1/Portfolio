@@ -1,3 +1,11 @@
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+  backdrop-filter: blur(2px);
+}
+
 .Header {
   display: flex;
   align-items: center;

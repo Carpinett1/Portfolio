@@ -1,31 +1,55 @@
 import { BsCodeSlash } from 'react-icons/bs';
+import { motion } from 'framer-motion';
 import styles from './about.module.css';
 import photo from '../../assets/Profile.png';
 
 function About() {
   return (
-    <div>
+    <>
       <section className={ styles.container }>
-        <div className={ styles.title }>
+        <motion.div
+          className={ styles.title }
+          initial={ { y: 100, opacity: 0 } }
+          whileInView={ { y: 0, opacity: 1 } }
+          exit={ { y: 100, opacity: 0 } }
+          transition={ { duration: 1.5 } }
+        >
           <h1>
             Olá,
             <br />
             Eu sou
             {' '}
-            <span className={ styles.styledText }>Thiago</span>
+            <span className={ styles.styledTitle }>Thiago</span>
             ,
             <br />
             Desenvolvedor Front End.
             <span className={ styles.styledTyping }>|</span>
           </h1>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          initial={ { x: 100, opacity: 0 } }
+          whileInView={ { x: 0, opacity: 1 } }
+          exit={ { x: 100, opacity: 0 } }
+          transition={ { duration: 1.5 } }
+        >
           <img src={ photo } alt="profile" className={ styles.profile } />
-        </div>
+        </motion.div>
       </section>
-      <div>
-        <div className={ styles.paragraphContainer }>
+      <section className={ styles.paragraphContainer }>
+        <motion.div
+          initial={ { x: -100, opacity: 0 } }
+          whileInView={ { x: 0, opacity: 1 } }
+          exit={ { x: -100, opacity: 0 } }
+          transition={ { duration: 1.5 } }
+        >
           <BsCodeSlash className={ styles.codesvg } />
+        </motion.div>
+        <motion.div
+          initial={ { opacity: 0 } }
+          whileInView={ { opacity: 1 } }
+          exit={ { opacity: 0 } }
+          transition={ { duration: 1.5, delay: 0.5 } }
+        >
           <p id="about" className={ styles.paragraph }>
             Durante cinco anos da minha vida, tive a incrível oportunidade de viver no
             <span className={ styles.styledText }> exterior</span>
@@ -45,9 +69,9 @@ function About() {
             inovadoras. Sinta-se à vontade para me acompanhar nesta empolgante
             jornada enquanto busco criar um impacto significativo.
           </p>
-        </div>
-      </div>
-    </div>
+        </motion.div>
+      </section>
+    </>
   );
 }
 
