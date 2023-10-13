@@ -48,7 +48,7 @@ function About() {
           initial={ { opacity: 0 } }
           whileInView={ { opacity: 1 } }
           exit={ { opacity: 0 } }
-          transition={ { duration: 1.5, delay: 0.5 } }
+          transition={ { duration: 1.5, delay: 1 } }
         >
           <p id="about" className={ styles.paragraph }>
             Durante cinco anos da minha vida, tive a incrível oportunidade de viver no
