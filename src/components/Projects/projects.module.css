@@ -66,3 +66,102 @@
   transform: scale(1.5);
   transition: 100ms ease-in-out;
 }
+
+@media screen and (max-width: 576px) {
+  .ProjectsContainer {
+    margin-top: 8rem;
+  }
+  
+  .ProjectCard {
+    flex-direction: column-reverse;
+  }
+  
+  .ProjectCard h1 {
+    font-size: 2rem;
+  }
+  
+  .ProjectCard h2 {
+    font-size: 1rem;
+    width: 20rem;
+  }
+  
+  .imgContainer {
+    margin-top: 2rem;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  
+  .img2 {
+    left: 80px;
+    top: 90px;
+  }
+  
+  .InfoContainer nav {
+    margin-top: 1rem;
+  }
+  
+  .code {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .ProjectsContainer {
+    margin-top: 8rem;
+  }
+  
+  .ProjectCard {
+    flex-direction: column-reverse;
+  }
+  
+  .ProjectCard h1 {
+    font-size: 2.2rem;
+  }
+  
+  .ProjectCard h2 {
+    font-size: 1.2rem;
+    width: 30rem;
+  }
+  
+  .imgContainer {
+    margin-top: 2rem;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  
+  .img2 {
+    left: 80px;
+    top: 90px;
+  }
+  
+  .code {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1280px) {
+  .ProjectsContainer {
+    margin-top: 12rem;
+  }
+  
+  .ProjectCard h1 {
+    font-size: 2.4rem;
+  }
+  
+  .ProjectCard h2 {
+    font-size: 1.2rem;
+    width: 30rem;
+  }
+  
+  .imgContainer {
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .code {
+    width: 3rem;
+    height: 3rem;
+  }
+}
