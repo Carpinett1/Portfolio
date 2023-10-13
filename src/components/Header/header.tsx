@@ -37,7 +37,7 @@ function Header() {
       >
         <a href="#about">Sobre mim</a>
         <a href="#projects">Projetos</a>
-        <a href="#contact">Contato</a>
+        <a href="#stacks">Stacks</a>
       </motion.div>
     </header>
   );
