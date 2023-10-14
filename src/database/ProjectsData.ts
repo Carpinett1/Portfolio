@@ -10,20 +10,18 @@ import Itunefy2 from '../assets/Projects/Itunefy2.png';
 import Password1 from '../assets/Projects/Password1.png';
 import Password2 from '../assets/Projects/Password2.png';
 
-type ProjectType = {
-  name: string,
-  link: string,
-  github: string,
-  img: string[],
-  description: string,
-  id: number,
+type DataType = {
+  Projects: {
+    name: string,
+    link: string,
+    github: string,
+    img: string[],
+    description: string,
+    id: number,
+  }[]
 };
 
-type DataProps = {
-  Projects: ProjectType[]
-};
-
-const Data: DataProps = {
+const Data: DataType = {
   Projects: [
     {
       name: 'Front End Store',
