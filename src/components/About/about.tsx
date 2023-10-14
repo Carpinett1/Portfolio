@@ -61,8 +61,8 @@ function About() {
             <span className={ styles.styledText }> programação</span>
             , uma paixão que me acompanha desde então. Atualmente, estou focado em iniciar
             minha carreira no mundo da tecnologia, buscando desafios empolgantes e
-            aprendizado constante. Além disso, já tive a experiência de ser proprietário
-            de uma empresa, então carrego comigo valiosos insights sobre
+            aprendizado constante. Além disso, Com experiência de ser
+            proprietário de uma empresa, Carrego comigo valiosos insights sobre
             <span className={ styles.styledText }> empreendedorismo e gestão</span>
             . Claro, Estou ansioso para continuar minha jornada, construindo um futuro
             sólido na área de tecnologia e aplicando minhas experiências para encontrar

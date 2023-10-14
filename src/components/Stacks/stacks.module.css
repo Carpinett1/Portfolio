@@ -110,6 +110,7 @@
 
   .stacksgrid {
     max-width: 40rem;
+    gap: 2rem;
   }
 
   .stackcard h1 {
@@ -139,6 +140,7 @@
 
   .stacksgrid {
     max-width: 25rem;
+    gap: 1rem;
   }
 
   .stackcard h1 {
@@ -154,5 +156,9 @@
     margin-top: 0.5rem;
     font-size: 1rem;
     font-weight: 300;
+  }
+
+  .selectAStack {
+    font-size: 1.5rem;
   }
 }
