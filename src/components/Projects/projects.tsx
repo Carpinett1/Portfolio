@@ -5,7 +5,8 @@ import Data from '../../database/ProjectsData';
 
 function Projects() {
   return (
-    <div id="projects" className={ styles.ProjectsContainer }>
+    <div className={ styles.ProjectsContainer }>
+      <span className="anchor" id="projects" />
       {Data && Data.Projects.map((project) => (
         <motion.div
           initial={ { opacity: 0 } }

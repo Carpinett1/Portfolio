@@ -7,6 +7,7 @@ function About() {
   return (
     <>
       <section className={ styles.container }>
+        <span className="anchor" id="about" />
         <motion.div
           className={ styles.title }
           initial={ { y: 100, opacity: 0 } }
@@ -50,7 +51,7 @@ function About() {
           exit={ { opacity: 0 } }
           transition={ { duration: 1.5, delay: 1 } }
         >
-          <p id="about" className={ styles.paragraph }>
+          <p className={ styles.paragraph }>
             Durante cinco anos da minha vida, tive a incrível oportunidade de viver no
             <span className={ styles.styledText }> exterior</span>
             , o que enriqueceu minha perspectiva e me permitiu aprender
