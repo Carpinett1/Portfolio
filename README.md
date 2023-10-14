@@ -1,5 +1,5 @@
 <h1 align="center">Olá 👋, Eu sou Thiago Carpinetti</h1>
-
+<h1 align="center"><a align="center" target="_blank" href="https://carpinett1.vercel.app/">Carpinett1.vercel.app</a></h1>
 <p align="left">
 Sou um desenvolvedor front-end que está empenhado em se tornar fullstack
 Minha jornada tem sido marcada pelo desenvolvimento de projetos que abrangem uma variedade de tecnologias, incluindo JavaScript, TypeScript, Vite, React.js, Redux, Jest e RTL. Minhas habilidades técnicas são reforçadas por minha fluência em inglês e pela minha experiência de cinco anos vivendo no exterior.
