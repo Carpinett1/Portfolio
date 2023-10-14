@@ -1,0 +1,158 @@
+.infoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1B1B1E;
+  border-radius: 20px;
+  padding: 1rem 1rem;
+  width: fit-content;
+  margin-bottom: 5rem;
+}
+
+.infoContainer p {
+  color: #FFFCF7;
+  font-family: 'Inter', 'sans-serif';
+  font-weight: 300;
+  font-size: 1.1rem;
+  margin-left: 2rem;
+  text-align: left;
+  width: 30rem;
+}
+
+.stackscontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stacksgrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 60rem;
+  margin-bottom: 10rem;
+}
+
+.selectAStack {
+  color: #1B1B1E;
+  margin-bottom: 2rem;
+  font-family: 'Inter', 'sans-serif';
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.stackcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  filter: grayscale(100);
+  padding: 1rem 1rem;
+  border-radius: 20px;
+  border: none;
+  background: none;
+}
+
+.stackcard a {
+  text-decoration: none;
+}
+
+.stackcardSelected {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem;
+}
+
+.stackcardSelected h1 {
+  color: #FFFCF7;
+  margin-top: 1rem;
+  font-family: 'Inter', 'sans-serif';
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.stackcard:hover, .stackcard:hover > h1  {
+  filter: grayscale(0);
+  background-color: #738290;
+  color: #FFFCF7;
+}
+
+.stackcard hr {
+  margin-top: 1rem;
+  width: 100%;
+  border: 1px solid #1B1B1E;
+  border-radius: 6px;
+}
+
+.stackcard h1 {
+  margin-top: 1rem;
+  color: #1B1B1E;
+  font-family: 'Inter', 'sans-serif';
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.image {
+  height: 8rem;
+  width: 8rem;
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .infoContainer p {
+    font-size: 1rem;
+    width: 20rem;
+  }
+
+  .stacksgrid {
+    max-width: 40rem;
+  }
+
+  .stackcard h1 {
+    font-size: 1.2rem;
+  }
+
+  .image {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .stackcardSelected h1 {
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .infoContainer {
+    padding: 0.5rem 0.5rem;
+  }
+  .infoContainer p {
+    font-size: 0.8rem;
+    margin-left: 0;
+    width: 14rem;
+  }
+
+  .stacksgrid {
+    max-width: 25rem;
+  }
+
+  .stackcard h1 {
+    font-size: 1rem;
+  }
+
+  .image {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .stackcardSelected h1 {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
